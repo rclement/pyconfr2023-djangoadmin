@@ -24,14 +24,14 @@ TESTING = APP_ENVIRONMENT == "testing"
 
 INSTALLED_APPS = [
     "whitenoise.runserver_nostatic",
-
-    "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "app.apps.AppAdminConfig",
     "app.accounts",
+    "app.timetracking",
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,17 @@
+{% extends 'admin/base.html' %}
+
+{% load static %}
+{% load i18n static %}
+
+{% block extrastyle %}
+{{ block.super }}
+{% endblock %}
+
+{% block extrahead %}{{ block.super }}
+<link rel="shortcut icon" type="image/png" href="{% static 'favicon.png' %}"/>
+{% endblock %}
+
+{% block userlinks %}
+<a href="https://github.com/rclement/pyconfr2023-djangoadmin">{% trans 'Repository' %}</a> /
+{{ block.super }}
+{% endblock %}

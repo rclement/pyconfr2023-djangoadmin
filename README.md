@@ -4,19 +4,26 @@
 
 Ce dépôt contient un exemple factice d'application métier développée uniquement en utilisant Django Admin.
 
-## Démarrage
+## Démarrage initial
 
-Installer l'environnement virtuel et les dépendances avec `pipenv` :
-
+1. Installer l'environnement virtuel et les dépendances avec `pipenv` :
 ```bash
 pipenv install -d
 pipenv shell
 ```
 
-Créer la base de données et lancer l'application :
-
+2. Créer la base de données :
 ```bash
 cp .example.env
 python manage.py migrate
+```
+
+3. Créer un utilisateur admin :
+```bash
+python manage.py createsuperuser
+```
+
+4. Lancer l'application :
+```bash
 python manage.py runserver
 ```
