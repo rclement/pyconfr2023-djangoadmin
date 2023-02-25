@@ -3,6 +3,7 @@
 > Application de démonstration
 
 Ce dépôt contient un exemple factice d'application métier développée uniquement en utilisant Django Admin.
+La [présentation](slides.pdf) associée est également incluse.
 
 ## Démarrage initial
 
